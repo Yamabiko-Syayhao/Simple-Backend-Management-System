@@ -1,0 +1,140 @@
+{
+	"pages": [
+		{
+			"path": "pages/login/login",
+			"style": {
+				"navigationBarTitleText": "登录",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/register/register",
+			"style": {
+				"navigationBarTitleText": "注册",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "精选",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/category/index",
+			"style": {
+				"navigationBarTitleText": "分类",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/cart/index",
+			"style": {
+				"navigationBarTitleText": "购物车",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/profile/index",
+			"style": {
+				"navigationBarTitleText": "我的",
+				"navigationStyle": "custom"
+			}
+		},
+		{ "path": "pages/profile/settings", "style": { "navigationBarTitleText": "个人信息", "navigationStyle": "custom" } },
+		{ "path": "pages/profile/nickname", "style": { "navigationBarTitleText": "修改昵称", "navigationStyle": "custom" } },
+		{ "path": "pages/profile/mobile", "style": { "navigationBarTitleText": "修改手机号", "navigationStyle": "custom" } },
+		{ "path": "pages/profile/password", "style": { "navigationBarTitleText": "密码设置", "navigationStyle": "custom" } },
+		{ "path": "pages/profile/coupons", "style": { "navigationBarTitleText": "我的优惠券", "navigationStyle": "custom" } },
+		{ "path": "pages/profile/favorites", "style": { "navigationBarTitleText": "我的收藏", "navigationStyle": "custom" } },
+		{ "path": "pages/profile/service", "style": { "navigationBarTitleText": "服务中心", "navigationStyle": "custom" } },
+		{ "path": "pages/profile/feedback", "style": { "navigationBarTitleText": "意见反馈", "navigationStyle": "custom" } },
+		{ "path": "pages/profile/faq", "style": { "navigationBarTitleText": "常见问题", "navigationStyle": "custom" } },
+		{ "path": "pages/order/list", "style": { "navigationBarTitleText": "我的订单", "navigationStyle": "custom" } },
+		{ "path": "pages/order/detail", "style": { "navigationBarTitleText": "订单详情", "navigationStyle": "custom" } },
+		{
+			"path": "pages/search/index",
+			"style": {
+				"navigationBarTitleText": "搜索",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/goods/list",
+			"style": {
+				"navigationBarTitleText": "商品列表",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/goods/detail",
+			"style": {
+				"navigationBarTitleText": "商品详情",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/brand/list",
+			"style": {
+				"navigationBarTitleText": "品牌商",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/brand/detail",
+			"style": {
+				"navigationBarTitleText": "品牌详情",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/group/list",
+			"style": {
+				"navigationBarTitleText": "团购列表",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/order/confirm",
+			"style": { "navigationBarTitleText": "确认订单", "navigationStyle": "custom" }
+		},
+		{
+			"path": "pages/order/payment",
+			"style": { "navigationBarTitleText": "支付订单", "navigationStyle": "custom" }
+		},
+		{
+			"path": "pages/order/coupons",
+			"style": { "navigationBarTitleText": "使用优惠券", "navigationStyle": "custom" }
+		},
+		{
+			"path": "pages/address/index",
+			"style": { "navigationBarTitleText": "收货地址", "navigationStyle": "custom" }
+		},
+		{
+			"path": "pages/address/edit",
+			"style": { "navigationBarTitleText": "编辑地址", "navigationStyle": "custom" }
+		},
+		{
+			"path": "pages/topic/list",
+			"style": {
+				"navigationBarTitleText": "专题精选",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/topic/detail",
+			"style": {
+				"navigationBarTitleText": "专题详情",
+				"navigationStyle": "custom"
+			}
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "商城",
+		"navigationBarBackgroundColor": "#FFFFFF",
+		"backgroundColor": "#FFFFFF"
+	},
+	"uniIdRouter": {}
+}

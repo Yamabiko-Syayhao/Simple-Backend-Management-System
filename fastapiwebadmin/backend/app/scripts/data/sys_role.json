@@ -1,0 +1,10 @@
+[
+  {
+    "name": "管理员",
+    "description": "系统管理员，拥有全部菜单权限",
+    "role_type": 10,
+    "status": 10,
+    "dept_id": 1,
+    "data_scope": 4
+  }
+]

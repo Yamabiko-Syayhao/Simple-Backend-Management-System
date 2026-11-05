@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta
+            name="keywords"
+            content="基础脚手框架"
+    />
+    <meta
+            name="description"
+            content=""
+    />
+    <link rel="icon" href="/logo.svg"/>
+    <title>fastapiwebadmin</title>
+    <style>
+        html, body, #app {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #f8f8f8;
+        }
+
+        html[data-theme='dark'], html[data-theme='dark'] body, html[data-theme='dark'] #app {
+            background-color: #141414;
+        }
+
+        .app-page-loading {
+            position: fixed;
+            inset: 0;
+            z-index: 9999999;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            background-color: rgba(255, 255, 255, 0.92);
+        }
+
+        html[data-theme='dark'] .app-page-loading {
+            background-color: rgba(20, 20, 20, 0.92);
+        }
+
+        .app-page-loading__dot {
+            fill: #5d87ff;
+            animation: app-page-loading-fade 1.6s infinite;
+        }
+
+        .app-page-loading__dot:nth-child(1) { animation-delay: 0s; }
+        .app-page-loading__dot:nth-child(2) { animation-delay: 0.5s; }
+        .app-page-loading__dot:nth-child(3) { animation-delay: 1s; }
+        .app-page-loading__dot:nth-child(4) { animation-delay: 1.5s; }
+
+        .app-page-loading__rotate {
+            transform-origin: 20px 20px;
+            animation: app-page-loading-rotate 1.6s linear infinite;
+        }
+
+        @keyframes app-page-loading-rotate {
+            100% { transform: rotate(360deg); }
+        }
+
+        @keyframes app-page-loading-fade {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.45; }
+        }
+    </style>
+</head>
+<body>
+<div id="app-page-loading" class="app-page-loading" aria-hidden="true">
+    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" aria-hidden="true">
+        <g class="app-page-loading__rotate">
+            <circle class="app-page-loading__dot" cx="20" cy="8" r="4"/>
+            <circle class="app-page-loading__dot" cx="32" cy="20" r="4"/>
+            <circle class="app-page-loading__dot" cx="20" cy="32" r="4"/>
+            <circle class="app-page-loading__dot" cx="8" cy="20" r="4"/>
+        </g>
+    </svg>
+</div>
+<div id="app" class="fastapiwebadmin"></div>
+<script type="text/javascript">
+    (function () {
+        try {
+            var themeConfig = JSON.parse(localStorage.getItem('themeConfig') || 'null');
+            if (themeConfig && themeConfig.isIsDark) {
+                document.documentElement.setAttribute('data-theme', 'dark');
+            }
+        } catch (e) {
+        }
+
+        var hasToken = /(?:^|;\s*)token=([^;]*)/.test(document.cookie);
+        if (hasToken) {
+            var loading = document.getElementById('app-page-loading');
+            if (loading) loading.style.display = 'flex';
+            window.nextLoading = true;
+        }
+    })();
+</script>
+<script type="module" src="/src/main.ts"></script>
+</body>
+</html>

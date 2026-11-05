@@ -1,0 +1,45 @@
+
+
+.app-container {
+  .el-card {
+    border-radius: calc(var(--custom-radius) / 2 + 2px);
+    border-color: var(--default-border, var(--el-border-color-lighter));
+  }
+
+  .el-card__body {
+    padding: 16px 20px;
+  }
+}
+
+.list-page-toolbar,
+[class*='-search'] {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+
+  .el-input {
+    width: 220px;
+    max-width: 100%;
+  }
+
+  .el-button + .el-button {
+    margin-left: 0;
+  }
+}
+
+@media (width <= 768px) {
+  .app-container .el-card__body {
+    padding: 12px;
+  }
+
+  .list-page-toolbar,
+  [class*='-search'] {
+    gap: 8px;
+
+    .el-input {
+      width: 100%;
+    }
+  }
+}

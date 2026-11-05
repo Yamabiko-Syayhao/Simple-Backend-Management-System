@@ -1,0 +1,1265 @@
+[
+  {
+    "path": "/home",
+    "name": "home",
+    "component": "home/index",
+    "title": "首页",
+    "icon": "ele-HomeFilled",
+    "isKeepAlive": 1,
+    "isAffix": 1,
+    "sort": 1,
+    "menu_type": 10,
+    "roles": "admin",
+    "children": []
+  },
+  {
+    "path": "/member",
+    "name": "member",
+    "component": "layout/routerView/parent",
+    "title": "用户管理",
+    "icon": "ele-UserFilled",
+    "sort": 10,
+    "redirect": "/member/list",
+    "menu_type": 10,
+    "children": [
+      {
+        "path": "/member/list",
+        "name": "memberList",
+        "component": "system/member/index",
+        "title": "会员管理",
+        "icon": "ele-User",
+        "sort": 1,
+        "menu_type": 10,
+        "children": [
+          {
+            "title": "查询会员",
+            "roles": "member:query",
+            "menu_type": 20,
+            "sort": 1,
+            "path": "",
+            "name": "",
+            "component": ""
+          },
+          {
+            "title": "新增会员",
+            "roles": "member:add",
+            "menu_type": 20,
+            "sort": 2,
+            "path": "",
+            "name": "",
+            "component": ""
+          },
+          {
+            "title": "编辑会员",
+            "roles": "member:edit",
+            "menu_type": 20,
+            "sort": 3,
+            "path": "",
+            "name": "",
+            "component": ""
+          },
+          {
+            "title": "删除会员",
+            "roles": "member:delete",
+            "menu_type": 20,
+            "sort": 4,
+            "path": "",
+            "name": "",
+            "component": ""
+          },
+          {
+            "title": "导出会员",
+            "roles": "member:export",
+            "menu_type": 20,
+            "sort": 5,
+            "path": "",
+            "name": "",
+            "component": ""
+          }
+        ]
+      },
+      {
+        "path": "/member/address",
+        "name": "memberAddress",
+        "component": "system/address/index",
+        "title": "收货地址",
+        "icon": "ele-Location",
+        "sort": 2,
+        "menu_type": 10,
+        "children": [
+          {
+            "title": "查询地址",
+            "roles": "address:query",
+            "menu_type": 20,
+            "sort": 1,
+            "path": "",
+            "name": "",
+            "component": ""
+          },
+          {
+            "title": "新增地址",
+            "roles": "address:add",
+            "menu_type": 20,
+            "sort": 2,
+            "path": "",
+            "name": "",
+            "component": ""
+          },
+          {
+            "title": "编辑地址",
+            "roles": "address:edit",
+            "menu_type": 20,
+            "sort": 3,
+            "path": "",
+            "name": "",
+            "component": ""
+          },
+          {
+            "title": "删除地址",
+            "roles": "address:delete",
+            "menu_type": 20,
+            "sort": 4,
+            "path": "",
+            "name": "",
+            "component": ""
+          },
+          {
+            "title": "导出地址",
+            "roles": "address:export",
+            "menu_type": 20,
+            "sort": 5,
+            "path": "",
+            "name": "",
+            "component": ""
+          }
+        ]
+      },
+      {
+        "path": "/member/favorite",
+        "name": "memberFavorite",
+        "component": "system/favorite/index",
+        "title": "会员收藏",
+        "icon": "ele-Star",
+        "sort": 3,
+        "menu_type": 10,
+        "children": [
+          {
+            "title": "查询收藏",
+            "roles": "favorite:query",
+            "menu_type": 20,
+            "sort": 1,
+            "path": "",
+            "name": "",
+            "component": ""
+          },
+          {
+            "title": "新增收藏",
+            "roles": "favorite:add",
+            "menu_type": 20,
+            "sort": 2,
+            "path": "",
+            "name": "",
+            "component": ""
+          },
+          {
+            "title": "编辑收藏",
+            "roles": "favorite:edit",
+            "menu_type": 20,
+            "sort": 3,
+            "path": "",
+            "name": "",
+            "component": ""
+          },
+          {
+            "title": "删除收藏",
+            "roles": "favorite:delete",
+            "menu_type": 20,
+            "sort": 4,
+            "path": "",
+            "name": "",
+            "component": ""
+          },
+          {
+            "title": "导出收藏",
+            "roles": "favorite:export",
+            "menu_type": 20,
+            "sort": 5,
+            "path": "",
+            "name": "",
+            "component": ""
+          }
+        ]
+      },
+      {
+        "path": "/member/footprint",
+        "name": "memberFootprint",
+        "component": "system/footprint/index",
+        "title": "会员足迹",
+        "icon": "ele-Position",
+        "sort": 4,
+        "menu_type": 10,
+        "children": [
+          {
+            "title": "查询足迹",
+            "roles": "footprint:query",
+            "menu_type": 20,
+            "sort": 1,
+            "path": "",
+            "name": "",
+            "component": ""
+          },
+          {
+            "title": "新增足迹",
+            "roles": "footprint:add",
+            "menu_type": 20,
+            "sort": 2,
+            "path": "",
+            "name": "",
+            "component": ""
+          },
+          {
+            "title": "编辑足迹",
+            "roles": "footprint:edit",
+            "menu_type": 20,
+            "sort": 3,
+            "path": "",
+            "name": "",
+            "component": ""
+          },
+          {
+            "title": "删除足迹",
+            "roles": "footprint:delete",
+            "menu_type": 20,
+            "sort": 4,
+            "path": "",
+            "name": "",
+            "component": ""
+          },
+          {
+            "title": "导出足迹",
+            "roles": "footprint:export",
+            "menu_type": 20,
+            "sort": 5,
+            "path": "",
+            "name": "",
+            "component": ""
+          }
+        ]
+      },
+      {
+        "path": "/member/searchHistory",
+        "name": "memberSearchHistory",
+        "component": "system/searchHistory/index",
+        "title": "搜索历史",
+        "icon": "ele-Search",
+        "sort": 5,
+        "menu_type": 10,
+        "children": [
+          {
+            "title": "查询历史",
+            "roles": "searchHistory:query",
+            "menu_type": 20,
+            "sort": 1,
+            "path": "",
+            "name": "",
+            "component": ""
+          },
+          {
+            "title": "新增历史",
+            "roles": "searchHistory:add",
+            "menu_type": 20,
+            "sort": 2,
+            "path": "",
+            "name": "",
+            "component": ""
+          },
+          {
+            "title": "编辑历史",
+            "roles": "searchHistory:edit",
+            "menu_type": 20,
+            "sort": 3,
+            "path": "",
+            "name": "",
+            "component": ""
+          },
+          {
+            "title": "删除历史",
+            "roles": "searchHistory:delete",
+            "menu_type": 20,
+            "sort": 4,
+            "path": "",
+            "name": "",
+            "component": ""
+          },
+          {
+            "title": "导出历史",
+            "roles": "searchHistory:export",
+            "menu_type": 20,
+            "sort": 5,
+            "path": "",
+            "name": "",
+            "component": ""
+          }
+        ]
+      },
+      {
+        "path": "/member/feedback",
+        "name": "memberFeedback",
+        "component": "system/feedback/index",
+        "title": "意见反馈",
+        "icon": "ele-ChatDotRound",
+        "sort": 6,
+        "menu_type": 10,
+        "children": [
+          {
+            "title": "查询反馈",
+            "roles": "feedback:query",
+            "menu_type": 20,
+            "sort": 1,
+            "path": "",
+            "name": "",
+            "component": ""
+          },
+          {
+            "title": "新增反馈",
+            "roles": "feedback:add",
+            "menu_type": 20,
+            "sort": 2,
+            "path": "",
+            "name": "",
+            "component": ""
+          },
+          {
+            "title": "编辑反馈",
+            "roles": "feedback:edit",
+            "menu_type": 20,
+            "sort": 3,
+            "path": "",
+            "name": "",
+            "component": ""
+          },
+          {
+            "title": "删除反馈",
+            "roles": "feedback:delete",
+            "menu_type": 20,
+            "sort": 4,
+            "path": "",
+            "name": "",
+            "component": ""
+          },
+          {
+            "title": "导出反馈",
+            "roles": "feedback:export",
+            "menu_type": 20,
+            "sort": 5,
+            "path": "",
+            "name": "",
+            "component": ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "path": "/mall",
+    "name": "mall",
+    "component": "layout/routerView/parent",
+    "title": "商场管理",
+    "icon": "ele-Goods",
+    "sort": 20,
+    "redirect": "/mall/region",
+    "menu_type": 10,
+    "children": [
+      {
+        "path": "/mall/region",
+        "name": "mallRegion",
+        "component": "system/region/index",
+        "title": "行政区域",
+        "icon": "ele-MapLocation",
+        "sort": 1,
+        "menu_type": 10,
+        "children": []
+      },
+      {
+        "path": "/mall/brand",
+        "name": "mallBrand",
+        "component": "system/brand/index",
+        "title": "品牌制造商",
+        "icon": "ele-PriceTag",
+        "sort": 2,
+        "menu_type": 10,
+        "children": [
+          {
+            "title": "查询品牌",
+            "roles": "brand:query",
+            "menu_type": 20,
+            "sort": 1,
+            "path": "",
+            "name": "",
+            "component": ""
+          },
+          {
+            "title": "新增品牌",
+            "roles": "brand:add",
+            "menu_type": 20,
+            "sort": 2,
+            "path": "",
+            "name": "",
+            "component": ""
+          },
+          {
+            "title": "编辑品牌",
+            "roles": "brand:edit",
+            "menu_type": 20,
+            "sort": 3,
+            "path": "",
+            "name": "",
+            "component": ""
+          },
+          {
+            "title": "删除品牌",
+            "roles": "brand:delete",
+            "menu_type": 20,
+            "sort": 4,
+            "path": "",
+            "name": "",
+            "component": ""
+          },
+          {
+            "title": "导出品牌",
+            "roles": "brand:export",
+            "menu_type": 20,
+            "sort": 5,
+            "path": "",
+            "name": "",
+            "component": ""
+          }
+        ]
+      },
+      {
+        "path": "/mall/category",
+        "name": "mallCategory",
+        "component": "system/category/index",
+        "title": "商品类目",
+        "icon": "ele-Menu",
+        "sort": 3,
+        "menu_type": 10,
+        "children": [
+          {
+            "title": "查询类目",
+            "roles": "category:query",
+            "menu_type": 20,
+            "sort": 1,
+            "path": "",
+            "name": "",
+            "component": ""
+          },
+          {
+            "title": "新增类目",
+            "roles": "category:add",
+            "menu_type": 20,
+            "sort": 2,
+            "path": "",
+            "name": "",
+            "component": ""
+          },
+          {
+            "title": "编辑类目",
+            "roles": "category:edit",
+            "menu_type": 20,
+            "sort": 3,
+            "path": "",
+            "name": "",
+            "component": ""
+          },
+          {
+            "title": "删除类目",
+            "roles": "category:delete",
+            "menu_type": 20,
+            "sort": 4,
+            "path": "",
+            "name": "",
+            "component": ""
+          }
+        ]
+      },
+      {
+        "path": "/mall/order",
+        "name": "mallOrder",
+        "component": "system/order/index",
+        "title": "订单管理",
+        "icon": "ele-List",
+        "sort": 4,
+        "menu_type": 10,
+        "children": [
+          {
+            "title": "查询订单",
+            "roles": "order:query",
+            "menu_type": 20,
+            "sort": 1,
+            "path": "",
+            "name": "",
+            "component": ""
+          },
+          {
+            "title": "删除订单",
+            "roles": "order:delete",
+            "menu_type": 20,
+            "sort": 2,
+            "path": "",
+            "name": "",
+            "component": ""
+          },
+          {
+            "title": "订单收款",
+            "roles": "order:collect",
+            "menu_type": 20,
+            "sort": 3,
+            "path": "",
+            "name": "",
+            "component": ""
+          },
+          {
+            "title": "订单发货",
+            "roles": "order:deliver",
+            "menu_type": 20,
+            "sort": 4,
+            "path": "",
+            "name": "",
+            "component": ""
+          },
+          {
+            "title": "订单退款",
+            "roles": "order:refund",
+            "menu_type": 20,
+            "sort": 5,
+            "path": "",
+            "name": "",
+            "component": ""
+          },
+          {
+            "title": "导出订单",
+            "roles": "order:export",
+            "menu_type": 20,
+            "sort": 6,
+            "path": "",
+            "name": "",
+            "component": ""
+          }
+        ]
+      },
+      {
+        "path": "/mall/afterSale",
+        "name": "mallAfterSale",
+        "component": "system/afterSale/index",
+        "title": "售后管理",
+        "icon": "ele-Service",
+        "sort": 5,
+        "menu_type": 10,
+        "children": [
+          {
+            "title": "查询售后",
+            "roles": "afterSale:query",
+            "menu_type": 20,
+            "sort": 1,
+            "path": "",
+            "name": "",
+            "component": ""
+          },
+          {
+            "title": "审核售后",
+            "roles": "afterSale:audit",
+            "menu_type": 20,
+            "sort": 2,
+            "path": "",
+            "name": "",
+            "component": ""
+          },
+          {
+            "title": "导出售后",
+            "roles": "afterSale:export",
+            "menu_type": 20,
+            "sort": 3,
+            "path": "",
+            "name": "",
+            "component": ""
+          }
+        ]
+      },
+      {
+        "path": "/mall/faq",
+        "name": "mallFaq",
+        "component": "system/faq/index",
+        "title": "通用问题",
+        "icon": "ele-QuestionFilled",
+        "sort": 6,
+        "menu_type": 10,
+        "children": [
+          {
+            "title": "查询问题",
+            "roles": "faq:query",
+            "menu_type": 20,
+            "sort": 1,
+            "path": "",
+            "name": "",
+            "component": ""
+          },
+          {
+            "title": "新增问题",
+            "roles": "faq:add",
+            "menu_type": 20,
+            "sort": 2,
+            "path": "",
+            "name": "",
+            "component": ""
+          },
+          {
+            "title": "编辑问题",
+            "roles": "faq:edit",
+            "menu_type": 20,
+            "sort": 3,
+            "path": "",
+            "name": "",
+            "component": ""
+          },
+          {
+            "title": "删除问题",
+            "roles": "faq:delete",
+            "menu_type": 20,
+            "sort": 4,
+            "path": "",
+            "name": "",
+            "component": ""
+          },
+          {
+            "title": "导出问题",
+            "roles": "faq:export",
+            "menu_type": 20,
+            "sort": 5,
+            "path": "",
+            "name": "",
+            "component": ""
+          }
+        ]
+      },
+      {
+        "path": "/mall/keyword",
+        "name": "mallKeyword",
+        "component": "system/keyword/index",
+        "title": "关键词",
+        "icon": "ele-CollectionTag",
+        "sort": 7,
+        "menu_type": 10,
+        "children": [
+          {
+            "title": "查询关键词",
+            "roles": "keyword:query",
+            "menu_type": 20,
+            "sort": 1,
+            "path": "",
+            "name": "",
+            "component": ""
+          },
+          {
+            "title": "新增关键词",
+            "roles": "keyword:add",
+            "menu_type": 20,
+            "sort": 2,
+            "path": "",
+            "name": "",
+            "component": ""
+          },
+          {
+            "title": "编辑关键词",
+            "roles": "keyword:edit",
+            "menu_type": 20,
+            "sort": 3,
+            "path": "",
+            "name": "",
+            "component": ""
+          },
+          {
+            "title": "删除关键词",
+            "roles": "keyword:delete",
+            "menu_type": 20,
+            "sort": 4,
+            "path": "",
+            "name": "",
+            "component": ""
+          },
+          {
+            "title": "导出关键词",
+            "roles": "keyword:export",
+            "menu_type": 20,
+            "sort": 5,
+            "path": "",
+            "name": "",
+            "component": ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "path": "/system",
+    "name": "system",
+    "component": "layout/routerView/parent",
+    "title": "系统设置",
+    "icon": "ele-BellFilled",
+    "sort": 60,
+    "redirect": "/system/menu",
+    "menu_type": 10,
+    "children": [
+      {
+        "path": "/system/menu",
+        "name": "systemMenu",
+        "component": "system/menu/index",
+        "title": "菜单管理",
+        "icon": "ele-Menu",
+        "sort": 1,
+        "menu_type": 10,
+        "children": []
+      },
+      {
+        "path": "/system/user",
+        "name": "systemUser",
+        "component": "system/user/index",
+        "title": "用户管理",
+        "icon": "ele-User",
+        "sort": 2,
+        "menu_type": 10,
+        "children": [
+          {
+            "title": "查询用户",
+            "roles": "user:query",
+            "menu_type": 20,
+            "sort": 1,
+            "path": "",
+            "name": "",
+            "component": ""
+          },
+          {
+            "title": "新增用户",
+            "roles": "user:add",
+            "menu_type": 20,
+            "sort": 2,
+            "path": "",
+            "name": "",
+            "component": ""
+          },
+          {
+            "title": "编辑用户",
+            "roles": "user:edit",
+            "menu_type": 20,
+            "sort": 3,
+            "path": "",
+            "name": "",
+            "component": ""
+          },
+          {
+            "title": "禁用用户",
+            "roles": "user:disable",
+            "menu_type": 20,
+            "sort": 4,
+            "path": "",
+            "name": "",
+            "component": ""
+          },
+          {
+            "title": "重置密码",
+            "roles": "user:resetpwd",
+            "menu_type": 20,
+            "sort": 5,
+            "path": "",
+            "name": "",
+            "component": ""
+          },
+          {
+            "title": "删除用户",
+            "roles": "user:delete",
+            "menu_type": 20,
+            "sort": 6,
+            "path": "",
+            "name": "",
+            "component": ""
+          }
+        ]
+      },
+      {
+        "path": "/system/role",
+        "name": "systemRole",
+        "component": "system/role/index",
+        "title": "角色管理",
+        "icon": "ele-UserFilled",
+        "sort": 3,
+        "menu_type": 10,
+        "children": [
+          {
+            "title": "查询角色",
+            "roles": "role:query",
+            "menu_type": 20,
+            "sort": 1,
+            "path": "",
+            "name": "",
+            "component": ""
+          },
+          {
+            "title": "新增角色",
+            "roles": "role:add",
+            "menu_type": 20,
+            "sort": 2,
+            "path": "",
+            "name": "",
+            "component": ""
+          },
+          {
+            "title": "编辑角色",
+            "roles": "role:edit",
+            "menu_type": 20,
+            "sort": 3,
+            "path": "",
+            "name": "",
+            "component": ""
+          },
+          {
+            "title": "删除角色",
+            "roles": "role:delete",
+            "menu_type": 20,
+            "sort": 4,
+            "path": "",
+            "name": "",
+            "component": ""
+          },
+          {
+            "title": "分配权限",
+            "roles": "role:permission",
+            "menu_type": 20,
+            "sort": 5,
+            "path": "",
+            "name": "",
+            "component": ""
+          }
+        ]
+      },
+      {
+        "path": "/system/lookup",
+        "name": "systemLookup",
+        "component": "system/lookup/index.vue",
+        "title": "数据字典",
+        "icon": "ele-Management",
+        "sort": 4,
+        "menu_type": 10,
+        "children": []
+      },
+      {
+        "path": "/system/dept",
+        "name": "dept",
+        "component": "/system/dept/index",
+        "title": "部门管理",
+        "icon": "ele-CreditCard",
+        "sort": 5,
+        "menu_type": 10,
+        "children": [
+          {
+            "title": "新增部门",
+            "roles": "dept:add",
+            "menu_type": 20,
+            "sort": 1,
+            "path": "",
+            "name": "",
+            "component": ""
+          },
+          {
+            "title": "编辑部门",
+            "roles": "dept:edit",
+            "menu_type": 20,
+            "sort": 2,
+            "path": "",
+            "name": "",
+            "component": ""
+          },
+          {
+            "title": "禁用部门",
+            "roles": "dept:disable",
+            "menu_type": 20,
+            "sort": 3,
+            "path": "",
+            "name": "",
+            "component": ""
+          },
+          {
+            "title": "删除部门",
+            "roles": "dept:delete",
+            "menu_type": 20,
+            "sort": 4,
+            "path": "",
+            "name": "",
+            "component": ""
+          }
+        ]
+      },
+      {
+        "path": "/system/file",
+        "name": "systemFile",
+        "component": "/system/file/index",
+        "title": "文件管理",
+        "icon": "ele-DocumentCopy",
+        "sort": 50,
+        "menu_type": 10,
+        "children": []
+      },
+      {
+        "path": "/system/monitor",
+        "name": "systemMonitor",
+        "component": "/system/monitor/index",
+        "title": "系统监控",
+        "icon": "ele-Platform",
+        "sort": 60,
+        "menu_type": 10,
+        "children": []
+      },
+      {
+        "path": "/system/personal",
+        "name": "personal",
+        "component": "system/personal/index",
+        "title": "个人中心",
+        "icon": "ele-User",
+        "sort": 70,
+        "menu_type": 10,
+        "children": []
+      }
+    ]
+  },
+  {
+    "path": "/apiDoc",
+    "name": "apiDoc",
+    "component": "layout/routerView/parent",
+    "title": "接口管理",
+    "icon": "ele-BellFilled",
+    "sort": 90,
+    "redirect": "/apiDoc/swagger",
+    "menu_type": 10,
+    "children": [
+      {
+        "path": "/apiDoc/swagger",
+        "name": "apiDocSwagger",
+        "component": "system/apiDoc/swagger",
+        "title": "Swagger文档",
+        "icon": "ele-ChatLineSquare",
+        "sort": 1,
+        "menu_type": 10,
+        "children": []
+      }
+    ]
+  },
+  {
+    "path": "/system/loginRecord",
+    "name": "loginRecord",
+    "component": "system/loginRecord/index",
+    "title": "登录记录",
+    "icon": "ele-ChatDotSquare",
+    "sort": 60,
+    "menu_type": 10,
+    "children": [
+      {
+        "title": "查询记录",
+        "roles": "loginRecord:query",
+        "menu_type": 20,
+        "sort": 1,
+        "path": "",
+        "name": "",
+        "component": ""
+      }
+    ]
+  },
+  {
+    "path": "/system/operationLog",
+    "name": "operationLog",
+    "component": "system/operationLog/index",
+    "title": "操作日志",
+    "icon": "ele-Document",
+    "sort": 61,
+    "menu_type": 10,
+    "children": [
+      {
+        "title": "查询日志",
+        "roles": "operationLog:query",
+        "menu_type": 20,
+        "sort": 1,
+        "path": "",
+        "name": "",
+        "component": ""
+      }
+    ]
+  },
+  {
+    "path": "/goods",
+    "name": "goods",
+    "component": "layout/routerView/parent",
+    "title": "商品管理",
+    "icon": "ele-Goods",
+    "sort": 30,
+    "redirect": "/goods/list",
+    "menu_type": 10,
+    "children": [
+      {
+        "path": "/goods/list",
+        "name": "goodsList",
+        "component": "system/goods/index",
+        "title": "商品列表",
+        "icon": "ele-List",
+        "sort": 1,
+        "menu_type": 10,
+        "children": [
+          {
+            "title": "查询商品",
+            "roles": "goods:query",
+            "menu_type": 20,
+            "sort": 1,
+            "path": "",
+            "name": "",
+            "component": ""
+          },
+          {
+            "title": "新增商品",
+            "roles": "goods:add",
+            "menu_type": 20,
+            "sort": 2,
+            "path": "",
+            "name": "",
+            "component": ""
+          },
+          {
+            "title": "编辑商品",
+            "roles": "goods:edit",
+            "menu_type": 20,
+            "sort": 3,
+            "path": "",
+            "name": "",
+            "component": ""
+          },
+          {
+            "title": "删除商品",
+            "roles": "goods:delete",
+            "menu_type": 20,
+            "sort": 4,
+            "path": "",
+            "name": "",
+            "component": ""
+          },
+          {
+            "title": "导出商品",
+            "roles": "goods:export",
+            "menu_type": 20,
+            "sort": 5,
+            "path": "",
+            "name": "",
+            "component": ""
+          }
+        ]
+      },
+      {
+        "path": "/goods/create",
+        "name": "goodsCreate",
+        "component": "system/goods/create",
+        "title": "商品上架",
+        "icon": "ele-Upload",
+        "sort": 2,
+        "menu_type": 10,
+        "isHide": 0,
+        "isKeepAlive": 0,
+        "children": []
+      },
+      {
+        "path": "/goods/edit",
+        "name": "goodsEdit",
+        "component": "system/goods/edit",
+        "title": "商品编辑",
+        "isHide": 1,
+        "isKeepAlive": 0,
+        "active_menu": "/goods/list",
+        "sort": 3,
+        "menu_type": 10
+      },
+      {
+        "path": "/goods/comment",
+        "name": "goodsComment",
+        "component": "system/goodsComment/index",
+        "title": "商品评论",
+        "icon": "ele-ChatDotSquare",
+        "sort": 4,
+        "menu_type": 10,
+        "children": [
+          { "title": "查询评论", "roles": "goodsComment:query", "menu_type": 20, "sort": 1, "path": "", "name": "", "component": "" },
+          { "title": "回复评论", "roles": "goodsComment:reply", "menu_type": 20, "sort": 2, "path": "", "name": "", "component": "" },
+          { "title": "删除评论", "roles": "goodsComment:delete", "menu_type": 20, "sort": 3, "path": "", "name": "", "component": "" },
+          { "title": "导出评论", "roles": "goodsComment:export", "menu_type": 20, "sort": 4, "path": "", "name": "", "component": "" }
+        ]
+      }
+    ]
+  },
+  {
+    "path": "/promotion",
+    "name": "promotion",
+    "component": "layout/routerView/parent",
+    "title": "推广管理",
+    "icon": "ele-Promotion",
+    "sort": 40,
+    "redirect": "/promotion/ad",
+    "menu_type": 10,
+    "children": [
+      {
+        "path": "/promotion/ad",
+        "name": "promotionAd",
+        "component": "system/ad/index",
+        "title": "广告管理",
+        "icon": "ele-Picture",
+        "sort": 1,
+        "menu_type": 10,
+        "children": [
+          { "title": "查询广告", "roles": "ad:query", "menu_type": 20, "sort": 1, "path": "", "name": "", "component": "" },
+          { "title": "新增广告", "roles": "ad:add", "menu_type": 20, "sort": 2, "path": "", "name": "", "component": "" },
+          { "title": "编辑广告", "roles": "ad:edit", "menu_type": 20, "sort": 3, "path": "", "name": "", "component": "" },
+          { "title": "删除广告", "roles": "ad:delete", "menu_type": 20, "sort": 4, "path": "", "name": "", "component": "" },
+          { "title": "导出广告", "roles": "ad:export", "menu_type": 20, "sort": 5, "path": "", "name": "", "component": "" }
+        ]
+      },
+      {
+        "path": "/promotion/coupon",
+        "name": "promotionCoupon",
+        "component": "system/coupon/index",
+        "title": "优惠券管理",
+        "icon": "ele-Ticket",
+        "sort": 2,
+        "menu_type": 10,
+        "children": [
+          { "title": "查询优惠券", "roles": "coupon:query", "menu_type": 20, "sort": 1, "path": "", "name": "", "component": "" },
+          { "title": "新增优惠券", "roles": "coupon:add", "menu_type": 20, "sort": 2, "path": "", "name": "", "component": "" },
+          { "title": "编辑优惠券", "roles": "coupon:edit", "menu_type": 20, "sort": 3, "path": "", "name": "", "component": "" },
+          { "title": "删除优惠券", "roles": "coupon:delete", "menu_type": 20, "sort": 4, "path": "", "name": "", "component": "" },
+          { "title": "导出优惠券", "roles": "coupon:export", "menu_type": 20, "sort": 5, "path": "", "name": "", "component": "" }
+        ]
+      },
+      {
+        "path": "/promotion/couponDetail",
+        "name": "promotionCouponDetail",
+        "component": "system/coupon/detail",
+        "title": "优惠券详情",
+        "isHide": 1,
+        "isKeepAlive": 0,
+        "active_menu": "/promotion/coupon",
+        "sort": 3,
+        "menu_type": 10
+      },
+      {
+        "path": "/promotion/topic",
+        "name": "promotionTopic",
+        "component": "system/topic/index",
+        "title": "专题管理",
+        "icon": "ele-Document",
+        "sort": 3,
+        "menu_type": 10,
+        "children": [
+          { "title": "查询专题", "roles": "topic:query", "menu_type": 20, "sort": 1, "path": "", "name": "", "component": "" },
+          { "title": "新增专题", "roles": "topic:add", "menu_type": 20, "sort": 2, "path": "", "name": "", "component": "" },
+          { "title": "编辑专题", "roles": "topic:edit", "menu_type": 20, "sort": 3, "path": "", "name": "", "component": "" },
+          { "title": "删除专题", "roles": "topic:delete", "menu_type": 20, "sort": 4, "path": "", "name": "", "component": "" },
+          { "title": "导出专题", "roles": "topic:export", "menu_type": 20, "sort": 5, "path": "", "name": "", "component": "" }
+        ]
+      },
+      {
+        "path": "/promotion/topicCreate",
+        "name": "promotionTopicCreate",
+        "component": "system/topic/create",
+        "title": "专题创建",
+        "isHide": 1,
+        "isKeepAlive": 0,
+        "active_menu": "/promotion/topic",
+        "sort": 4,
+        "menu_type": 10
+      },
+      {
+        "path": "/promotion/topicEdit",
+        "name": "promotionTopicEdit",
+        "component": "system/topic/edit",
+        "title": "专题编辑",
+        "isHide": 1,
+        "isKeepAlive": 0,
+        "active_menu": "/promotion/topic",
+        "sort": 5,
+        "menu_type": 10
+      },
+      {
+        "path": "/promotion/groupRule",
+        "name": "promotionGroupRule",
+        "component": "system/groupRule/index",
+        "title": "团购规则",
+        "icon": "ele-Sell",
+        "sort": 6,
+        "menu_type": 10,
+        "children": [
+          { "title": "查询团购规则", "roles": "groupRule:query", "menu_type": 20, "sort": 1, "path": "", "name": "", "component": "" },
+          { "title": "新增团购规则", "roles": "groupRule:add", "menu_type": 20, "sort": 2, "path": "", "name": "", "component": "" },
+          { "title": "编辑团购规则", "roles": "groupRule:edit", "menu_type": 20, "sort": 3, "path": "", "name": "", "component": "" },
+          { "title": "删除团购规则", "roles": "groupRule:delete", "menu_type": 20, "sort": 4, "path": "", "name": "", "component": "" },
+          { "title": "导出团购规则", "roles": "groupRule:export", "menu_type": 20, "sort": 5, "path": "", "name": "", "component": "" }
+        ]
+      },
+      {
+        "path": "/promotion/groupActivity",
+        "name": "promotionGroupActivity",
+        "component": "system/groupActivity/index",
+        "title": "团购活动",
+        "icon": "ele-Tickets",
+        "sort": 7,
+        "menu_type": 10,
+        "children": [
+          { "title": "查询团购活动", "roles": "groupActivity:query", "menu_type": 20, "sort": 1, "path": "", "name": "", "component": "" },
+          { "title": "导出团购活动", "roles": "groupActivity:export", "menu_type": 20, "sort": 2, "path": "", "name": "", "component": "" }
+        ]
+      }
+    ]
+  },
+  {
+    "path": "/statistics",
+    "name": "statistics",
+    "component": "layout/routerView/parent",
+    "title": "统计报表",
+    "icon": "ele-DataLine",
+    "sort": 50,
+    "redirect": "/statistics/user",
+    "menu_type": 10,
+    "children": [
+      {
+        "path": "/statistics/user",
+        "name": "statisticsUser",
+        "component": "system/statistics/user/index",
+        "title": "用户统计",
+        "icon": "ele-User",
+        "sort": 1,
+        "menu_type": 10,
+        "children": []
+      },
+      {
+        "path": "/statistics/order",
+        "name": "statisticsOrder",
+        "component": "system/statistics/order/index",
+        "title": "订单统计",
+        "icon": "ele-List",
+        "sort": 2,
+        "menu_type": 10,
+        "children": []
+      },
+      {
+        "path": "/statistics/goods",
+        "name": "statisticsGoods",
+        "component": "system/statistics/goods/index",
+        "title": "商品统计",
+        "icon": "ele-Goods",
+        "sort": 3,
+        "menu_type": 10,
+        "children": []
+      }
+    ]
+  }
+]

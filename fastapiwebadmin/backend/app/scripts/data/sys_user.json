@@ -1,0 +1,14 @@
+[
+  {
+    "username": "admin",
+    "password": "$2b$12$4P1t5is7iZefasOiAR1SgOCSXRd/W3gnsrrRZoqWzfZo6lFs8ZDh2",
+    "email": "admin@qq.com",
+    "nickname": "admin",
+    "status": 1,
+    "user_type": 10,
+    "remarks": "超级管理员",
+    "avatar": "",
+    "tags": [],
+    "dept_id": 1
+  }
+]

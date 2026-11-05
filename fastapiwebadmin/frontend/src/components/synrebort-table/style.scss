@@ -1,0 +1,97 @@
+.synrebort-table {
+  position: relative;
+  width: 100%;
+
+  :deep(.el-table) {
+    margin-top: 4px;
+    font-size: 14px;
+  }
+
+  :deep(.el-table__header th.el-table__cell) {
+    background-color: var(--el-fill-color-lighter) !important;
+    color: var(--el-text-color-primary) !important;
+    font-weight: 500;
+  }
+
+  :deep(.el-table__body td.el-table__cell) {
+    color: var(--el-text-color-regular);
+  }
+
+  :deep(.el-loading-mask) {
+    background-color: var(--default-box-color) !important;
+  }
+
+  :deep(.synrebort-table-op-cell .cell) {
+    overflow: visible !important;
+    white-space: normal !important;
+    line-height: 1.5;
+  }
+
+  .synrebort-table__pagination {
+    display: flex;
+    margin-top: 16px;
+
+    :deep(.el-select) {
+      width: 108px !important;
+    }
+
+    &.left {
+      justify-content: flex-start;
+    }
+
+    &.center {
+      justify-content: center;
+    }
+
+    &.right {
+      justify-content: flex-end;
+    }
+
+    &.custom-pagination {
+      :deep(.el-pagination) {
+        .btn-prev,
+        .btn-next {
+          background-color: transparent;
+          border: 1px solid var(--ntesterc-gray-300);
+          transition: border-color 0.15s;
+
+          &:hover:not(.is-disabled) {
+            color: var(--theme-color);
+            border-color: var(--theme-color);
+          }
+        }
+
+        li {
+          box-sizing: border-box;
+          font-weight: 400 !important;
+          background-color: transparent;
+          border: 1px solid var(--ntesterc-gray-300);
+          transition: border-color 0.15s;
+
+          &.is-active {
+            font-weight: 400;
+            color: #fff;
+            background-color: var(--theme-color);
+            border: 1px solid var(--theme-color);
+          }
+
+          &:hover:not(.is-disabled) {
+            border-color: var(--theme-color);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (width <= 640px) {
+  .synrebort-table .synrebort-table__pagination {
+    :deep(.el-pagination) {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px 0;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}

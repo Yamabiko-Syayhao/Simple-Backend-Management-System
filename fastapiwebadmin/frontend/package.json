@@ -1,0 +1,93 @@
+{
+  "name": "fastapiwebadmin-Elementplus-admin",
+  "version": "2.0.1",
+  "description": "纯洁干净的开发平台系统",
+  "author": "Rebort",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "postinstall": "node scripts/patch-monaco-editor.mjs",
+    "dev": "vite",
+    "dev:force": "vite --force",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint-fix": "eslint --fix --ext .js --ext .jsx --ext .vue src/",
+    "prebuild": "node scripts/prepare-tinymce.mjs",
+    "predev": "node scripts/prepare-tinymce.mjs"
+  },
+  "dependencies": {
+    "@element-plus/icons-vue": "^2.3.1",
+    "@iconify/vue": "^4.3.0",
+    "@tailwindcss/vite": "^4.3.3",
+    "@tinymce/tinymce-vue": "^6.3.0",
+    "@vueuse/core": "^12.5.0",
+    "axios": "^1.7.9",
+    "dompurify": "^3.4.17",
+    "echarts": "^5.6.0",
+    "element-plus": "^2.9.4",
+    "js-cookie": "^3.0.5",
+    "lucide-vue-next": "^0.454.0",
+    "mitt": "^3.0.1",
+    "nprogress": "^0.2.0",
+    "pinia": "^2.3.1",
+    "pinia-plugin-persistedstate": "^4.2.0",
+    "qrcodejs2-fixes": "^0.0.2",
+    "qs": "^6.14.0",
+    "screenfull": "^6.0.2",
+    "sortablejs": "^1.15.6",
+    "tailwindcss": "^4.3.3",
+    "tinymce": "^8.10.1",
+    "tinymce-i18n": "^26.10.26",
+    "vue": "^3.5.13",
+    "vue-clipboard3": "^2.0.0",
+    "vue-router": "^4.5.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.4",
+    "@types/nprogress": "^0.2.3",
+    "@typescript-eslint/eslint-plugin": "^5.46.0",
+    "@typescript-eslint/parser": "^5.46.0",
+    "@vitejs/plugin-vue": "^6.0.7",
+    "cropperjs": "^1.6.2",
+    "esbuild": "^0.25.0",
+    "eslint": "8.22.0",
+    "eslint-plugin-vue": "^9.8.0",
+    "monaco-editor": "^0.34.1",
+    "prettier": "^2.8.1",
+    "sass": "^1.83.4",
+    "splitpanes": "^3.1.5",
+    "typescript": "^5.7.3",
+    "vite": "^8.0.0",
+    "vite-plugin-monaco-editor": "1.0.5",
+    "vue-eslint-parser": "^9.1.0",
+    "vuedraggable": "^4.1.0",
+    "xterm": "^5.1.0",
+    "xterm-addon-fit": "^0.7.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ],
+  "bugs": {
+    "url": "https://github.com/rebort-hub/fastapiwebadminunner/issues"
+  },
+  "engines": {
+    "node": ">=20.19.0",
+    "npm": ">= 9.0.0"
+  },
+  "keywords": [
+    "vue",
+    "vue3",
+    "vuejs/vue-next",
+    "vuejs/vue-next-template",
+    "element-ui",
+    "element-plus",
+    "vue-next-admin",
+    "next-admin"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rebort-hub/fastapiwebadmin.git"
+  }
+}

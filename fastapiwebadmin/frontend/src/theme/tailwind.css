@@ -1,0 +1,113 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  --ntesterc-color: #ffffff;
+  --theme-color: var(--main-color);
+  --main-color: var(--el-color-primary);
+
+  --ntesterc-primary: oklch(0.7 0.23 260);
+  --ntesterc-secondary: oklch(0.72 0.19 231.6);
+  --ntesterc-error: oklch(0.73 0.15 25.3);
+  --ntesterc-info: oklch(0.58 0.03 254.1);
+  --ntesterc-success: oklch(0.78 0.17 166.1);
+  --ntesterc-warning: oklch(0.78 0.14 75.5);
+  --ntesterc-danger: oklch(0.68 0.22 25.3);
+
+  --ntesterc-gray-100: #f9fafb;
+  --ntesterc-gray-200: #f2f4f5;
+  --ntesterc-gray-300: #e6eaeb;
+  --ntesterc-gray-400: #dbdfe1;
+  --ntesterc-gray-500: #949eb7;
+  --ntesterc-gray-600: #7987a1;
+  --ntesterc-gray-700: #4d5875;
+  --ntesterc-gray-800: #383853;
+  --ntesterc-gray-900: #323251;
+
+  --ntesterc-card-border: rgba(0, 0, 0, 0.08);
+  --default-border: #e2e8ee;
+  --default-border-dashed: #dbdfe9;
+  --default-bg-color: #fafbfc;
+  --default-box-color: #ffffff;
+  --ntesterc-hover-color: #edeff0;
+  --ntesterc-active-color: #f2f4f5;
+  --ntesterc-el-active-color: #f2f4f5;
+
+  --custom-radius: 0.75rem;
+}
+
+.dark,
+[data-theme='dark'] {
+  --ntesterc-color: #000000;
+  --ntesterc-gray-100: #110f0f;
+  --ntesterc-gray-200: #17171c;
+  --ntesterc-gray-300: #393946;
+  --ntesterc-gray-400: #505062;
+  --ntesterc-gray-500: #73738c;
+  --ntesterc-gray-600: #8f8fa3;
+  --ntesterc-gray-700: #ababba;
+  --ntesterc-gray-800: #c7c7d1;
+  --ntesterc-gray-900: #e3e3e8;
+  --ntesterc-card-border: rgba(255, 255, 255, 0.08);
+  --default-border: rgba(255, 255, 255, 0.1);
+  --default-border-dashed: #363843;
+  --default-bg-color: #070707;
+  --default-box-color: #161618;
+  --ntesterc-hover-color: #252530;
+  --ntesterc-active-color: #202226;
+  --ntesterc-el-active-color: #2e2e38;
+}
+
+@theme {
+  --color-box: var(--default-box-color);
+  --color-theme: var(--theme-color);
+  --color-hover-color: var(--ntesterc-hover-color);
+  --color-active-color: var(--ntesterc-active-color);
+  --color-el-active-color: var(--ntesterc-active-color);
+  --color-primary: var(--ntesterc-primary);
+  --color-secondary: var(--ntesterc-secondary);
+  --color-error: var(--ntesterc-error);
+  --color-info: var(--ntesterc-info);
+  --color-success: var(--ntesterc-success);
+  --color-warning: var(--ntesterc-warning);
+  --color-danger: var(--ntesterc-danger);
+  --color-g-100: var(--ntesterc-gray-100);
+  --color-g-200: var(--ntesterc-gray-200);
+  --color-g-300: var(--ntesterc-gray-300);
+  --color-g-400: var(--ntesterc-gray-400);
+  --color-g-500: var(--ntesterc-gray-500);
+  --color-g-600: var(--ntesterc-gray-600);
+  --color-g-700: var(--ntesterc-gray-700);
+  --color-g-800: var(--ntesterc-gray-800);
+  --color-g-900: var(--ntesterc-gray-900);
+}
+
+@layer utilities {
+  .flex-c {
+    @apply flex items-center;
+  }
+
+  .flex-b {
+    @apply flex justify-between;
+  }
+
+  .flex-cc {
+    @apply flex items-center justify-center;
+  }
+
+  .flex-cb {
+    @apply flex items-center justify-between;
+  }
+
+  .tad-200 {
+    @apply transition-all duration-200;
+  }
+
+  .border-full-d {
+    @apply border border-[var(--default-border)];
+  }
+
+  .c-p {
+    @apply cursor-pointer;
+  }
+}
